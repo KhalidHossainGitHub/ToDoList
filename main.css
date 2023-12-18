@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, sans-serif; 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    margin-top: 20px; 
+}
+
+.wrapper {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    max-width: 900px;
+    margin-top: 20px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.task-input img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.task-input input[type="text"] {
+    width: 65%;
+    padding: 9px;
+    border: 2px solid #ccc;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.filters span {
+    cursor: pointer;
+    margin: 0 10px;
+    color: #007BFF;
+    font-weight: 600;
+}
+
+.filters .active {
+    border-bottom: 3px solid #007BFF;
+}
+
+.task-box {
+    list-style: none;
+    padding: 12px;
+    text-align: left;
+}
+
+.task {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.task .task-options {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    display: flex;
+    gap: 100px;
+}
+
+.task .task-options i {
+    cursor: pointer;
+}
+
+.task label {
+    display: flex;
+    align-items: center;
+}
+
+.task label input:checked + p {
+    text-decoration: line-through;
+}
+
+.task input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.task .task-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: auto;
+}
+
+.task .task-info p {
+    margin: 0;
+}
+
+.task .task-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task .task-details p {
+    margin: 0;
+}
+
+.task .due-date {
+    font-size: 15px;
+    color: #555;
+    margin-left: 35px; 
+}
+
+.task .settings {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.ellipsis-icon {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.task-menu {
+    z-index: 10;
+    right: -5px;
+    bottom: -65px;
+    width: 150px; 
+    padding: 2px 2px; 
+    background: #fff;
+    border: 2px solid #ccc;
+    position: absolute;
+    border-radius: 5px;
+    transform: scale(0);
+    transform-origin: top right;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+    list-style: none; 
+}
+
+.task-menu ul {
+    padding: 0;
+}
+
+.task-menu li {
+    display: flex; 
+    align-items: center; 
+    height: 25px;
+    font-size: 14px;
+    margin: 5px 0; 
+    padding: 0 10px; 
+    cursor: pointer;
+    text-align: left;
+}
+
+.task-menu li i {
+    margin-right: 5px; 
+}
+
+.task:last-child .task-menu {
+    bottom: 0;
+    transform-origin: bottom right;
+}
+
+.task:first-child .task-menu {
+    bottom: -65px;
+    transform-origin: top right;
+}
+
+.settings:hover .task-menu {
+    transform: scale(1);
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clear-btn {
+    color: #fff;
+    background-color: #007BFF;
+    cursor: pointer;
+    border: none;
+}
+
+.clear-btn:hover {
+    background-color: #0056b3;
+}
+
+.icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.icon img {
+    width: 90px;
+    height: 90px;
+}
+
+#due-date {
+    background-color: #fff;
+    border: 2px solid #ccc; 
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 9px;
+}
