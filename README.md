@@ -1,10 +1,14 @@
-# To Do List Application
+# To-Do List Application
 
-The **To Do List Application** is a redesign of my original Task Management List. It is a fully functional to-do list app built with **HTML**, **CSS**, and **JavaScript**. The program allows users to manage tasks with advanced features such as task prioritization, due dates, and the ability to store tasks using **local storage** so that tasks remain even after closing the browser.
+The **To-Do List Application** is a redesign of my original Task Management List. It is a fully functional to-do list app built with **HTML**, **CSS**, and **JavaScript**. The program allows users to manage tasks with advanced features such as task prioritization, due dates, and the ability to store tasks using **local storage** so that tasks remain even after closing the browser.
+
+<p align="center">
+  <img width="948" alt="image" src="https://github.com/user-attachments/assets/d13445a8-b53f-49e7-a8a9-efcc65f0324e">
+</p>
 
 ## Project Overview
 
-The To Do List Application enables users to:
+The To-Do List Application enables users to:
 
 - **Add New Tasks**: Input tasks into the list.
 - **Edit Tasks**: Modify task details after they've been added.
@@ -35,10 +39,10 @@ The To Do List Application enables users to:
 
 ## How to View the Project
 
-To view the To Do List Application on your local machine, follow these steps:
+To view the To-Do List Application on your local machine, follow these steps:
 
 1. **Download the ZIP folder**:
-   - Go to the [GitHub repository](https://github.com/yourusername/to-do-list-application) (replace `yourusername` with your actual GitHub username).
+   - Go to the https://github.com/KhalidHossainGitHub/ToDoList.git
    - Click on the green **Code** button, then select **Download ZIP**.
 
 2. **Extract the ZIP folder**:
@@ -47,12 +51,10 @@ To view the To Do List Application on your local machine, follow these steps:
 
 3. **Open the project**:
    - Navigate to the unzipped folder.
-   - Inside the folder, you'll find `index.html`, `main.css`, `script.js`, `bars-icon.svg`, and `listIcon.jpg`.
+   - Inside the folder, you'll find `index.html,` `main.css,` `script.js,` `bars-icon.svg`, and `listIcon.jpg.`
 
 4. **Run the project**:
    - Double-click the `index.html` file. This will open the To Do List Application in your default browser.
    - You can now view and interact with the To Do List Application locally in your browser.
 
 5. **Optional**: If you have a text editor (like **VS Code**), you can open the project to modify the HTML, CSS, or JavaScript files and see the changes reflected in your browser.
-
-
